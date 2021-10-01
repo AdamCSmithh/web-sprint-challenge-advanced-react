@@ -15,7 +15,7 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Instructions
 
-In this project, you will add class components to your a basic ecommerce site that allow you to request product data from a server and render that data. You will also implement the ablitity to add products to a shopping cart.
+In this project, you will add class components to your basic ecommerce site that allow you to request product data from a server and render that data. You will also implement the ablitity to add products to a shopping cart.
 
 In meeting the minimum viable product (MVP) specifications listed below, your project should look like the solution examples below:
 
@@ -88,9 +88,15 @@ You will also need to build the two tests in the `CheckoutForm.test.js` file and
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What are the main differences between a stateful and a functional component?
+    Stateful components render values depending on the state that is passed to them through props. A functional component is always stateless. 
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+    componentWillMount() is called just before mounting occurs and is called before render() is invoked. We use the constructor() instead to set state. The componentWillUpdate is invoked just before rendering when new props or state are being received. We now use componentDidUpdate to replace componentWillUpdate. 
 
 3. Define stateful logic.
+    Stateful logic is anytime that we use behavior to change state using hooks and custom hooks for example. 
 
 4. What are the three step of creating a successful test? What is done in each phase?
+    - Arrange - which renders the react element we've selected. 
+    - Act - which is where we define the tests of our code. 
+    - Assert - which is where we "expect" our tests to pass. 
